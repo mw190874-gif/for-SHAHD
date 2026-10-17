@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Happy Birthday Shahd 🎂</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;900&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="fireworksCanvas"></canvas>
+<audio id="bgMusic" loop><source src="music.mp3" type="audio/mpeg"></audio>
+<button id="musicBtn" class="music-btn">🎵</button>
+
+<!-- 1. الترحيب -->
+<section class="screen active" id="s1">
+  <div class="glass-box">
+    <h1 class="name">Shahd</h1>
+    <h2 class="hb">Happy Birthday</h2>
+    <button class="btn" id="btnStart">يلا نبدأ ✨</button>
+  </div>
+</section>
+
+<!-- 2. التورتة -->
+<section class="screen" id="s2">
+  <div class="glass-box">
+    <h2 class="title">كل سنة وأنتي طيبة ❤️</h2>
+    <div class="cake-wrapper">
+      <div class="cake-3d">
+        <div class="candle">
+          <div class="flame"></div>
+          <span class="number">19</span>
+        </div>
+        <div class="layer layer-top"></div>
+        <div class="layer layer-mid"></div>
+        <div class="layer layer-bot"></div>
+      </div>
+    </div>
+    <button class="btn" id="btnBlow">اطفي الشمع 🌬️</button>
+    <button class="btn hidden" id="btnNextCake" style="margin-top: 15px;">كمّلي ➜</button>
+  </div>
+</section>
+
+<!-- 3. الصور -->
+<section class="screen" id="s3">
+  <div class="glass-box">
+    <h2 class="title">لحظات حلوة 📸</h2>
+    <div class="gallery">
+      <div class="polaroid"><img src="photo1.jpg"></div>
+      <div class="polaroid"><img src="photo2.jpg"></div>
+      <div class="polaroid"><img src="photo3.jpg"></div>
+      <div class="polaroid"><img src="photo4.jpg"></div>
+      <div class="polaroid"><img src="photo5.jpg"></div>
+      <div class="polaroid"><img src="photo6.jpg"></div>
+    </div>
+    <button class="btn" id="btnNextPhotos" style="margin-top: 20px;">كمّلي ➜</button>
+  </div>
+</section>
+
+<!-- 4. الهدية والرسالة -->
+<section class="screen" id="s4">
+  <div class="glass-box" id="giftContainer">
+    <h2 class="title">عندي لكي هدية 🎁</h2>
+    <div class="gift" id="giftBox">
+      <div class="lid"></div>
+      <div class="box"></div>
+    </div>
+    <p class="hint" id="giftHint">دوسي على الهدية 👆</p>
+  </div>
+  
+  <div class="glass-box message-box hidden" id="messageBox">
+    <p class="long-text">
+      كل سنة وانتي حبيبتي، كل سنة وانتي اجمل حاجة حصلتلي في حياتي. ربنا يخليكي ليا وميحرمنيش من ضحكتك اللي بتنور يومي. عيد ميلاد سعيد يا كل الدنيا.<br><br>
+      اليوم عيد ميلاد اجمل بنت في الدنيا، عيد ميلاد اللي خلت لحياتي معنى. من يوم ما دخلتي حياتي وانا بقيت شخص تاني، بقيت احب الحياة عشان انتي فيها.<br><br>
+      يا رب تكون سنة حلوة عليكي زي حلاوة قلبك، وتحققى كل اللي نفسك فيه، وانا افضل جنبك في كل خطوة. بحبك اكتر من اي كلام يتقال.<br><br>
+      كل سنة وانتي طيبة يا ست البنات، كبرتي سنة وبقيتي احلى واحلى وانا هتجنن اكتر واكتر. عقبال مليون سنة وانتي قارفاني ومنكدة عليا بس بموت فيكي بردو.<br><br>
+      انتي مش مجرد حبيبة، انتي صاحبتي وبنتي وكل حاجة ليا.<br>
+      كل سنة وانتي معايا، وكل سنة وانا بحبك اكتر من اللي قبلها.
+    </p>
+    <button class="btn" id="btnFinal" style="margin-top: 20px;">آخر مفاجأة 🌟</button>
+  </div>
+</section>
+
+<!-- 5. النهاية -->
+<section class="screen" id="s5">
+  <div class="glass-box">
+    <h1 class="name" style="font-size: 4rem;">Shahd</h1>
+    <h2 class="hb" style="font-size: 1.5rem;">Happy Birthday</h2>
+    <p class="long-text" style="font-size: 1.1rem; margin-top: 10px;">كل سنة وأنتي طيبة يا شهد..<br>وكل سنة وأنتي أجمل حاجة في الدنيا ❤️</p>
+    
+    <div class="signature">
+      Made with love by <br>
+      <span>BELAL</span>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
